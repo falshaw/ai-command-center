@@ -1,0 +1,27 @@
+{
+  "port": 3020,
+  "user": "there",
+  "timezone": "Europe/Berlin",
+  "home": { "label": "Home", "lat": 52.52, "lon": 13.40 },
+  "arcs": [{ "lat": 48.14, "lon": 11.58 }],
+
+  "apps": [
+    { "name": "grafana", "port": 3000 },
+    { "name": "open-webui", "port": 8080, "composeDir": "../../open-webui" },
+    { "name": "my-app", "port": 3010, "composeDir": "../../my-app" }
+  ],
+  "services": [
+    { "name": "Ollama", "url": "http://127.0.0.1:11434/api/tags" },
+    { "name": "ComfyUI", "url": "http://127.0.0.1:8188/system_stats" }
+  ],
+
+  "todayFile": "today.json",
+  "tasksFile": "TASKS.md",
+  "standingTasks": ["T01"],
+  "feeds": [
+    { "id": "reading", "label": "Reading list", "file": "feed-reading.json" },
+    { "id": "events", "label": "Events", "file": "feed-events.json" }
+  ],
+
+  "terminal": { "cwd": "..", "command": "claude" }
+}

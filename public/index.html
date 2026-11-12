@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="hud-token" content="__HUD_TOKEN__">
+  <title>AI Command Center</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/vendor/xterm.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="sky" id="sky" aria-hidden="true">
+    <div class="wave w1"></div><div class="wave w2"></div><div class="wave w3"></div>
+    <div class="orb o1"></div><div class="orb sun"></div><div class="orb o3"></div>
+  </div>
+
+  <header class="top">
+    <span class="av" id="avatar">·</span>
+    <h1 class="hello" id="greeting">Welcome back</h1>
+    <div class="chips" id="summary"><span class="chip">Loading your day…</span></div>
+    <span class="pill status" id="fleet-pill"><i class="led"></i><span id="fleet-count">checking</span></span>
+    <div class="clockbox"><span class="clock" id="time">--:--</span><span id="date-pill"></span></div>
+  </header>
+
+  <nav class="side" aria-label="Views">
+    <div id="nav"></div>
+    <button class="nav" id="nav-claude" type="button">❯ Claude Code</button>
+    <div class="side-foot" id="ai"></div>
+  </nav>
+
+  <section class="stage" id="stage">
+    <div id="globe"></div>
+    <div class="stage-cap"><b id="online">–</b><span>apps orbiting · green opens it, grey starts it</span></div>
+  </section>
+
+  <aside class="right">
+    <div class="card list-card">
+      <div class="ch"><h2 id="list-title">Today</h2><span id="list-meta"></span></div>
+      <div class="scroll" id="list"></div>
+    </div>
+  </aside>
+
+  <div class="bottom">
+    <section class="card term">
+      <div class="ch"><h2><i class="led" id="term-led"></i>Claude Code</h2><span id="term-state">connecting</span><button id="term-new" type="button" class="mini">New session</button></div>
+      <div id="term"></div>
+    </section>
+  </div>
+
+  <script src="/vendor/xterm.js"></script>
+  <script src="/vendor/addon-fit.js"></script>
+  <script src="/vendor/three.min.js"></script>
+  <script src="/vendor/topojson-client.min.js"></script>
+  <script src="/globe.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
