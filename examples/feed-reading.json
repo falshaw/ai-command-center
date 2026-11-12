@@ -1,0 +1,5 @@
+[
+  { "title": "Self-hosting LLMs: a practical checklist", "sub": "blog · 12 min", "url": "https://example.com/llm-checklist", "score": 92, "firstSeen": "2030-01-01T08:00:00Z" },
+  { "title": "WebSocket security pitfalls", "sub": "article · 8 min", "url": "https://example.com/ws-security", "score": 81, "firstSeen": "2029-12-28T08:00:00Z" },
+  { "title": "Three.js globe techniques", "sub": "tutorial", "url": "https://example.com/threejs-globe", "score": 64 }
+]

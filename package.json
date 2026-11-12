@@ -1,0 +1,22 @@
+{
+  "name": "ai-command-center",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A local home screen for a self-hosted app fleet: 3D fleet globe, today panel, task chips and an embedded Claude Code terminal. Localhost only.",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check server.mjs && node --check lib/config.mjs && node --check lib/sources.mjs && node --check lib/term.mjs && node --check public/app.js && node --check public/globe.js"
+  },
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "@xterm/addon-fit": "^0.11.0",
+    "@xterm/xterm": "^6.0.0",
+    "node-pty": "^1.1.0",
+    "three": "0.128.0",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2",
+    "ws": "^8.22.2"
+  }
+}

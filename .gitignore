@@ -1,0 +1,6 @@
+node_modules/
+logs/
+hud.config.json
+data/
+*.log
+.DS_Store

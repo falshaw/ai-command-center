@@ -1,0 +1,12 @@
+{
+  "plan": [
+    { "label": "Training", "text": "Swim 30 min" },
+    { "label": "Dinner", "text": "Salmon with roast vegetables" }
+  ],
+  "events": [
+    { "title": "Dentist", "location": "City centre", "inDays": 1, "time": "09:30" },
+    { "title": "Team call", "inDays": 2, "time": "15:00" },
+    { "title": "Weekend trip", "inDays": 4 },
+    { "title": "Fixed-date example", "start": "2030-01-01T09:30:00Z" }
+  ]
+}
